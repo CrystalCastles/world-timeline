@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Twitter Clone</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1 class="title">Twitter Clone</h1>
+  </header>
+  <main>
+    <form class="message-form">
+      <label for="profilePic">Profile Picture</label>
+      <input type="file" accept=".jpg, .jpeg" id="profilePic" name="profilePic">
+
+      <div class="error-message">
+      </div>
+
+      <label for="name">Name</label>
+      <input class="u-full-width" type="text" id="name" name="name">
+
+      <label for="handle">Handle</label>
+      <input class="u-full-width" type="text" id="handle" name="handle">
+
+      <label for="name">Message</label>
+      <textarea class="u-full-width" type="text" id="message" name="message"></textarea>
+      <button class="button-primary">Send Your Message</button>
+    </form>
+    <div class="posts"></div>
+    <div class="loading">
+      <img src="loading.gif" alt="">
+    </div>
+    <div class="button-container">
+      <!-- <button id="loadMoreButton" class="button-primary" style="visibility: hidden">Load More Posts</button> -->
+      <p id="loadMore">Loading...</p>
+    </div>
+  </main>
+  <script src="client.js"></script>
+</body>
+</html>

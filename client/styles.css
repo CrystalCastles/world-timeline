@@ -1,0 +1,23 @@
+.title {
+  text-align: center;
+}
+
+.message-form, .loading {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.loading {
+  text-align: center;
+}
+
+.posts {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin: 1em;
+}
